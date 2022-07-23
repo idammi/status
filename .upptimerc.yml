@@ -14,7 +14,7 @@ sites:
     icon: https://store.socialgenius.net/wp-content/uploads/2021/02/cropped-favicon-192x192.png
     maxResponseTime: 30000
   - name: TikTok API
-    url: $TIKTOK_API_ENDPOINT
+    url: https://api.socialgenius.net/v1/service/status
     headers:
       - "Authorization: Bearer $TIKTOK_API_TOKEN"
     icon: https://app.socialgenius.net/favicon.ico?version=dark
