@@ -1,31 +1,33 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: idammi
+repo: status
+
+assignees:
+  -  idammi
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: SocialGenius.net
+    url: https://app.socialgenius.net
+    icon: https://app.socialgenius.net/favicon.ico
+    maxResponseTime: 30000
+  - name: SocialGenius.net Store
+    url: https://store.socialgenius.net
+    icon: https://store.socialgenius.net/wp-content/uploads/2021/02/cropped-favicon-192x192.png
+    maxResponseTime: 30000
+  - name: TikTok API
+    url: $TIKTOK_API_ENDPOINT
+    headers:
+      - "Authorization: Bearer $TIKTOK_API_TOKEN"
+    icon: https://app.socialgenius.net/favicon.ico?version=dark
+    maxResponseTime: 30000
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+  cname: status.socialgenius.net
+  logoUrl: https://app.socialgenius.net/favicon.ico
+  favicon: https://app.socialgenius.net/favicon.ico
+  name: SocialGenius Status
+  introTitle: "**SocialGenius** uptime monitor and status page"
+  introMessage: This status page uses **real-time** data from [SocialGenius](https://socialgenius.net) servers.
+      
+commitMessages:
+  commitAuthorName: "SocialGenius Bot"
+  commitAuthorEmail: "dami@socialgenius.net"
